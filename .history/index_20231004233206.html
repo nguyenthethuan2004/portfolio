@@ -251,30 +251,6 @@
 
     <!-- custom js -->
     <script src="js/script.js"></script>
-    <script>//<![CDATA[
-      const disabledKeys = ["c", "C", "x", "J", "u", "I"];
-      const showAlert = e => {
-        e.preventDefault();
-        return alert("Bỏ ý định đó đi địt cụ mày!");
-      }
-      document.addEventListener("contextmenu", e => {
-        showAlert(e);
-      });
-      document.addEventListener("keydown", e => {
-        // calling showAlert() function, if the pressed key matched to disabled keys
-        if((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
-          showAlert(e);
-        }
-      });
-      window.addEventListener("load",function(){
-        try {
-          !function t(n) {
-            1 === ("" + n / n).length && 0 !== n || function() {}.constructor("debugger")(), t(++n)
-          }(0)
-        } catch (n) {
-          setTimeout(t, 100)
-        }
-      });
-//]]></script>
+    
   </body>
 </html>

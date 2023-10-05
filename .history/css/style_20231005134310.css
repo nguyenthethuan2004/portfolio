@@ -49,9 +49,7 @@ section {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
-.header .logo img {
-  font-size: 1.5rem;
-}
+.header 
 
 .logo {
   font-size: 2.5rem;
